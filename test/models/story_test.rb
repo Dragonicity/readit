@@ -23,4 +23,14 @@ class StoryTest < ActiveSupport::TestCase
     assert s.valid?
   end
 
+  test "returns highest vote first" do
+    highest_id = stories(:one).votes.map(&:id).max
+    assert_equal highest_id, stories(:one).votes.latest.first.id
+  end
+
+  test "return 3 latest votes" do
+    10.times { stories(:one).votes.create }
+    assert_equal 3, stories(:one).votes.latest.size
+  end
+
 end

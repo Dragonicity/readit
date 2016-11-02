@@ -1,9 +1,11 @@
 require 'test_helper'
 
 class VotesControllerTest < ActionDispatch::IntegrationTest
-  test "should get create" do
-    get votes_create_url
-    assert_response :success
+  
+  test "creates vote" do
+    assert_difference 'stories(:two).votes.count' do
+      post story_votes_path(stories(:two))
+    end 
   end
 
 end
