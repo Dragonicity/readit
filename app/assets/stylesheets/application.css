@@ -19,25 +19,26 @@ body {
   margin: 15px 25px;
   font-family: Helvetica, Arial, sans-serif;
 }
+
 p { margin: 0 }
 input {
   margin-bottom: 1em;
 }
 #content {
-background-color: #fff; border: 10px solid #ccc; padding: 10px;
-overflow: hidden; /* added */
+  background-color: #fff;
+  border: 10px solid #ccc;
+  padding: 10px;
+  overflow: hidden; /* added */
 }
 * html #content { /* added */
   height: 1%; /* added */
 } /* added */
-
 #notification {
   border: 5px solid #9c9;
   background-color: #cfc;
   padding: 5px;
   margin: 10px 0;
 }
-
 .field_with_errors {
   color: red;
   background: transparent;
@@ -45,11 +46,26 @@ overflow: hidden; /* added */
 .field_with_errors input {
   border: thin solid red;
 }
-
-.form_errors { color: red }
+.form_errors {
+  color: red;
+}
 
 #login_logout {
   float: right;
   color: #999;
   font-size: smaller;
+}
+
+#navigation {
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  text-align: center;
+}
+#navigation li {
+  display: inline;
+  padding: 0 5px;
+}
+#navigation li a {
+  color: #fff;
 }

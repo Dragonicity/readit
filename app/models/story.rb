@@ -1,6 +1,6 @@
 class Story < ApplicationRecord
-  belongs_to :user
   validates :name, :link, presence: true
+  belongs_to :user
   has_many :votes do
     def latest
       order('id DESC').limit(3)
@@ -10,5 +10,4 @@ class Story < ApplicationRecord
   def to_param
     "#{id}-#{name.gsub(/\W/, '-').downcase}"
   end
-
 end
