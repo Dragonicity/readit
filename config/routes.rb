@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'votes/create'
 
   resources :stories do
@@ -6,4 +7,6 @@ Rails.application.routes.draw do
     end
   end
   
+resource :session
+
 end
