@@ -2,5 +2,7 @@
 
 one:
   story: one
+  user: glenn
 two:
   story: one
+  user: john
