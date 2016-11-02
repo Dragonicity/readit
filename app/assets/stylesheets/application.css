@@ -47,3 +47,9 @@ overflow: hidden; /* added */
 }
 
 .form_errors { color: red }
+
+#login_logout {
+  float: right;
+  color: #999;
+  font-size: smaller;
+}
