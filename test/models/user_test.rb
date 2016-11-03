@@ -12,4 +12,9 @@ class UserTest < ActiveSupport::TestCase
     assert users(:john).votes.includes votes(:two)
   end
 
+  test "voted on association" do
+    assert_equal [ stories(:one) ],
+    users(:glenn).stories_voted_on
+  end
+
 end
