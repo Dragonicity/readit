@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'stories#index'
+  
   get 'votes/create'
 
   resources :stories do
