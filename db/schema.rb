@@ -15,10 +15,10 @@ ActiveRecord::Schema.define(version: 20161103014614) do
   create_table "stories", force: :cascade do |t|
     t.string   "name"
     t.string   "link"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
     t.integer  "user_id"
-    t.integer  "votes_count"
+    t.integer  "votes_count", default: 0
   end
 
   create_table "users", force: :cascade do |t|
