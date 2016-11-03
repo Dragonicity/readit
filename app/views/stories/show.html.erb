@@ -12,7 +12,9 @@
       collection: @story.votes.latest %>
   <% end %>
 </ul>
-
+<p>
+  <%= @story.description %>
+</p>
 <p class="submitted_by">
   Submitted by:
   <span><%= link_to @story.user.name, @story.user %></span>

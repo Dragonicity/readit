@@ -69,3 +69,8 @@ input {
 #navigation li a {
   color: #fff;
 }
+
+.footer {
+  background-color: #CCC;
+  border-top: 1px solid #333;
+}

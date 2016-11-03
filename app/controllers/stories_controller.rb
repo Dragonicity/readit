@@ -23,7 +23,7 @@ class StoriesController < ApplicationController
   end
 
   def story_params
-    params.require(:story).permit(:name, :link)
+    params.require(:story).permit(:name, :link, :description)
   end
 
   def bin
