@@ -10,3 +10,9 @@ two:
   link: http://community.sitepoint.com
   user: glenn
   votes_count: 0
+
+promoted:
+  name: What is a Debugger?
+  link: http://en.wikipedia.org/wiki/Debugger/
+  user: john
+  votes_count: 5
