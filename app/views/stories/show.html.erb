@@ -25,7 +25,7 @@
 <% unless @story.tag_list.empty? %>
   <p class="tags">
     <strong>Tags:</strong>
-    <%= @story.tag_list %>
+    <%= render partial: "tags/tag", collection: @story.tags %>
   </p>
 <% end %>
 
